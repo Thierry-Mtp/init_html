@@ -46,14 +46,32 @@ nav {
     flex-direction: row;
 }
 
+#burger-btn {
+    display: none;
+    border: 1x solid black;
+    background-color: grey;
+    color: white;
+    padding-top: 0.2em;
+    padding-bottom: 0.2em;
+
+}
+
 /**
 * Première règle de media
+*   Change flex direction for xs device
 **/
 
 @media screen and (max-width: 576px) {
-    .flex-container {
+    header nav ul.flex-container {
         flex-direction: column;
+        display: none;
     }
+
+    #burger-btn {
+        display: block;
+    }
+
+    
 }
 
 header nav ul li {
