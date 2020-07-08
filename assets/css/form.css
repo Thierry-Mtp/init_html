@@ -1,0 +1,32 @@
+/**
+* Form and field design
+**/
+
+.required::after { /** Pseudo-Element => ::**/
+    content: "(*)";
+    color: red;
+}
+
+/**
+* Input Design
+**/
+
+input {
+    border-radius: 0.3em;
+    padding: 0.5em;
+    border: solid 1px rgb(128, 128, 128);
+}
+
+#send-btn {
+    background-color: #28a745;
+    color: white;
+    border-radius: 0.3em;
+    width: 8em;
+    height: 2.5em;
+    border: none;
+    font-size: 0.5em;
+}
+
+#send-btn:hover {
+    background-color: #0f6b24;
+}

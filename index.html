@@ -11,6 +11,7 @@
 
         <link href="./assets/css/styles.css" rel="stylesheet">
         <link href="./assets/css/layout.css" rel="stylesheet">
+        <link href="./assets/css/form.css" rel="stylesheet">
         <!-- Load icomoon styles -->
         <link href="./assets/css/style.css" rel="stylesheet">
 
@@ -21,11 +22,11 @@
         Le contenu sera traité et affiché par le navigateur
     -->
     <body>
-        <header>
+        <header class="row">
   
-            <h1>Découvrir le HTML</h1>
+            <h1 class="col-12 col-xl-8">Découvrir le HTML</h1>
 
-            <p>
+            <p class="col-12 col-xl-4">
                 L'histoire du 
                 <!--
                     abbr avec l'attribut title pour donner la signification
@@ -36,7 +37,7 @@
             </p>
 
             <!-- Element qui regroupe des balises de navigation -->
-            <nav class="bg-dark">
+            <nav class="bg-dark col-12 col-xl-12">
 
                 <!-- Burger menu button :
                     Displayed only when device width <= 576px
@@ -88,7 +89,7 @@
         </header>
         
         <main class="row"><!-- Contenu principal d'une page / unique dans un document -->
-            <section id="section-html" class="col-6">
+            <section id="section-html" class="col-xl-6 col-12">
                 <header>
                     <h2>Le langage HTML</h2>
                     <p>
@@ -120,7 +121,7 @@
                 </article>
             </section>
 
-            <section id="section-css" class="col-6">
+            <section id="section-css" class="col-xl-6 col-12">
                 <header>
                     <h2>Le langage CSS</h2>
                     <p>
@@ -156,6 +157,32 @@
                 </nav>
             </footer>
         </div>
+        <!-- Template pour l'affichage du formulaire de contact -->
+        <!--<template id="form-template">-->
+            <!-- form c'est un ensemble de champs (ou contrôles de formulaire) -->
+            <form>
+                <div>
+                    <input type="text" name="name-crtl" id="name-ctrl" placeholder="Votre nom...">
+                </div>
+
+                <div>
+                    <span class="required">
+                        <input type="email" name="email-ctrl" id="email-ctrl" placeholder="Votre email..." required>
+                    </span>
+                </div>
+
+                <div>
+                    <label class="required">Objet de votre demande :</label>
+                    <textarea name="object-ctrl" id="object-ctrl"></textarea>
+                </div>
+
+                <div>
+                    <button id="send-btn">Envoyer</button>
+                </div>
+            </form>
+
+        <!--</template>-->
+        <!-- Fin du template pour l'affichage du formulaire de contact -->
     </body>
 
 </html><!-- Fin du document HTML -->
